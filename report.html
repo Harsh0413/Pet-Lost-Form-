@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            My Pet Got Lost - Report a Lost Pet
+        </title>
+        <link rel="stylesheet" type="text/css" href="style.css"/>
+    </head>
+    <body>
+          <h2>My Pet Got Lost - Report a Lost Pet</h2>
+          <p>Sahre your story of a lost pet:</p>
+
+          <form method="post" action="report.php"> 
+              <label for="firstName">First name:</label>
+              <input type="text" id="firstName"  name="firstName" required/><br/>
+
+              <label for="LastName">Last Name:</label>
+              <input type="text" id="LastName" name="LastName" required/><br/>
+
+              <label for="email">What is your email address?</label>
+              <input type="text" id="email" name="email" required/><br/>
+
+              <label for="when">When did you last see your Pet?</label>
+              <input type="text" id="when"  name="when" /><br/>
+
+              <label for="howLong">How long has your pet been gone?</label>
+              <input type="text" id="howLong"  name="howLong" /><br/>
+
+              <label for="idTag">Does ypur pet has any ID tag?</label>
+              <input type="text" id="idTag"  name="idTag"/><br/>
+
+              <label for="petDescription">Describe ypur Pet:</label>
+              <input type="text" id="petDescription"  name="petDescription" size="32"/><br/>
+
+              <label for="petName">What is your pet's name?</label>
+              <input type="text" id="petName"  name="petName"/><br/>
+
+              <label>Have you seen my dog Max?</label>
+              <label for="yes" class="radioLabels">Yes</label>
+              <input id="yes" name="maxSeen" type="radio" value="yes" required/>
+              <label for="No" class="radioLabels">No</label>
+              <input id="No" name="maxSeen" type="radio" value="No" required/><br/>
+
+              <img src="dog.jpg" width="133" height="200" alt="My lost Dog."/><br/>
+
+
+              <label for="otherInfo">any other comments or information?</label>
+              <textarea id="otherInfo" name="otherInfo"></textarea><br/>
+
+
+              <input type="submit" value="Report Lost Pet" name="submit"/>
+
+            </form>
+    </body>
+</html>
